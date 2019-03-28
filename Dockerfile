@@ -56,7 +56,7 @@ RUN pip install -r requirements.txt && \
 RUN git clone https://github.com/vishnubob/wait-for-it.git /opt/wait-for-it && \
        cd /opt/wait-for-it && \
        git checkout 54d1f0b && \
-       cp /opt/wait-for-it.sh /usr/local/bin/ && \
+       cp /opt/wait-for-it/wait-for-it.sh /usr/local/bin/ && \
        cd /opt/yeti
 
 RUN groupadd yeti && \
